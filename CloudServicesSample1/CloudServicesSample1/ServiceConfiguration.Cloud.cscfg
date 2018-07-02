@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="CloudServicesSample1" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="5" osVersion="*" schemaVersion="2015-04.2.6">
+  <Role name="MyFrontEnd">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=myetcloudservice42;AccountKey=$(_myetcloudservice42.key_)" />
+      <Setting name="APPINSIGHTS_INSTRUMENTATIONKEY" value="" />
+    </ConfigurationSettings>
+  </Role>
+  <Role name="BackendServices">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=myetcloudservice42;AccountKey=$(_myetcloudservice42.key_)" />
+    </ConfigurationSettings>
+  </Role>
+</ServiceConfiguration>
