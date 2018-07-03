@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWCFServiceLib", "MyWCFServiceLib\MyWCFServiceLib.csproj", "{7A4BF2B7-A8BD-4412-A13E-4DCF27206C6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClientApp", "ClientApp\ClientApp.csproj", "{F23D6B62-74EF-48F7-8FC3-6DDC6543E627}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7A4BF2B7-A8BD-4412-A13E-4DCF27206C6A} = {7A4BF2B7-A8BD-4412-A13E-4DCF27206C6A}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7A4BF2B7-A8BD-4412-A13E-4DCF27206C6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A4BF2B7-A8BD-4412-A13E-4DCF27206C6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A4BF2B7-A8BD-4412-A13E-4DCF27206C6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A4BF2B7-A8BD-4412-A13E-4DCF27206C6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F23D6B62-74EF-48F7-8FC3-6DDC6543E627}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F23D6B62-74EF-48F7-8FC3-6DDC6543E627}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F23D6B62-74EF-48F7-8FC3-6DDC6543E627}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F23D6B62-74EF-48F7-8FC3-6DDC6543E627}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2B8CC237-4DD9-4A31-B0EE-A0F2C7DD2127}
+	EndGlobalSection
+EndGlobal
